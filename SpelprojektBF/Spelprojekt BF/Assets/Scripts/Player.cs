@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    Vector3 move = new Vector3();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 1f;
+    public float target = 10f;
     void Start()
     {
         
@@ -13,9 +12,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < 5)
+        Vector3 move = new Vector3();
+
+        if (transform.position.x < target)
         {
             move.x = 1;
         }
+        move.Normalize();
+        transform.position += move * Time.deltaTime * speed;
     }
 }
