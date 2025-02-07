@@ -1,9 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public float speed = 1f;
     public float target = 10f;
+    public GameObject UiObject;
+    public int skräpTyp;
+    
     void Start()
     {
         
@@ -20,5 +24,9 @@ public class Player : MonoBehaviour
         }
         move.Normalize();
         transform.position += move * Time.deltaTime * speed;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        UiObject.SetActive(true);
     }
 }
