@@ -5,6 +5,7 @@ public class Fortsätt : MonoBehaviour
 {
     public void OnClick()
     {
+        
         var path = GetComponent<Path>();
         path.enabled = true;
     }
