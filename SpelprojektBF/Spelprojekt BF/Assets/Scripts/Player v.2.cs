@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Playerv2 : MonoBehaviour
@@ -6,9 +7,11 @@ public class Playerv2 : MonoBehaviour
     
     public int skräpTyp;
 
+    private int startposition;
+
     void Start()
     {
-
+        
     }
 
     void Update()
