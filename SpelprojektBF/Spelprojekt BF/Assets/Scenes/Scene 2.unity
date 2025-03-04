@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 40564127}
   - component: {fileID: 40564126}
   - component: {fileID: 40564125}
+  - component: {fileID: 40564128}
   m_Layer: 5
   m_Name: Button 3
   m_TagString: Untagged
@@ -200,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 40564126}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 40564128}
+        m_TargetAssemblyTypeName: KompostKnapp, Assembly-CSharp
+        m_MethodName: Klickadknapp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &40564126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +252,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40564123}
   m_CullTransparentMesh: 1
+--- !u!114 &40564128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40564123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd49e172b6245642ab36ade07b3c587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kompostKnapp: {fileID: 40564125}
+  "skr\xE4ptypKnapp": 3
+  "r\xE4ttF\xE4rg": {r: 0.07450981, g: 0.9607844, b: 0, a: 1}
+  "felF\xE4rg": {r: 0.9607844, g: 0, b: 0, a: 1}
+  "skr\xE4pTyp": 0
 --- !u!1 &216737692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,7 +1565,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
     m_HighlightedColor: {r: 0.7843138, g: 0.7843138, b: 0.7843138, a: 1}
     m_PressedColor: {r: 0.65882355, g: 0.654902, b: 0.654902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1620,11 +1650,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd49e172b6245642ab36ade07b3c587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kompostKnapp: {fileID: 0}
+  kompostKnapp: {fileID: 1732656852}
   "skr\xE4ptypKnapp": 1
   "r\xE4ttF\xE4rg": {r: 0.08550525, g: 1, b: 0, a: 1}
   "felF\xE4rg": {r: 1, g: 0, b: 0.01667595, a: 1}
-  "skr\xE4pTyp": 1
+  "skr\xE4pTyp": 0
 --- !u!1 &1824500194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,6 +2326,7 @@ GameObject:
   - component: {fileID: 2122242225}
   - component: {fileID: 2122242224}
   - component: {fileID: 2122242223}
+  - component: {fileID: 2122242226}
   m_Layer: 5
   m_Name: Button 2
   m_TagString: Untagged
@@ -2366,7 +2397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2122242224}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2122242226}
+        m_TargetAssemblyTypeName: KompostKnapp, Assembly-CSharp
+        m_MethodName: Klickadknapp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2122242224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2405,6 +2448,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122242221}
   m_CullTransparentMesh: 1
+--- !u!114 &2122242226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122242221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd49e172b6245642ab36ade07b3c587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kompostKnapp: {fileID: 2122242223}
+  "skr\xE4ptypKnapp": 2
+  "r\xE4ttF\xE4rg": {r: 0.07450981, g: 0.9607844, b: 0, a: 1}
+  "felF\xE4rg": {r: 0.9607844, g: 0, b: 0, a: 1}
+  "skr\xE4pTyp": 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

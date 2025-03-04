@@ -34,6 +34,9 @@ public class KompostKnapp : MonoBehaviour
             cb1.normalColor = rättFärg;
             cb1.highlightedColor = rättFärg;
             cb1.pressedColor = rättFärg;
+            cb1.selectedColor = rättFärg;
+            cb1.disabledColor = rättFärg;
+
             kompostKnapp.colors = cb1;
         }
         else
@@ -42,6 +45,8 @@ public class KompostKnapp : MonoBehaviour
             cb2.normalColor = felFärg;
             cb2.highlightedColor = felFärg;
             cb2.pressedColor = felFärg;
+            cb2.selectedColor = felFärg;
+            cb2.disabledColor = felFärg;
             kompostKnapp.colors = cb2;
         }
     }
