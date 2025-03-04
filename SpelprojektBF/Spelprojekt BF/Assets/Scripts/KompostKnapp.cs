@@ -9,7 +9,7 @@ public class KompostKnapp : MonoBehaviour
     public Color rättFärg;
     public Color felFärg;
     public int skräpTyp;
-    
+    public int klar = 0;
 
 
 
@@ -38,6 +38,7 @@ public class KompostKnapp : MonoBehaviour
             cb1.disabledColor = rättFärg;
 
             kompostKnapp.colors = cb1;
+            klar = 1;
         }
         else
         {
