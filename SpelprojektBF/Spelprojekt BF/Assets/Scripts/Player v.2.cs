@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class Playerv2 : MonoBehaviour
 {
-    public GameObject UiObject;
-    
+
+    [SerializeField]
+    GameObject[] UiObject;
     public int skräpTyp;
+    int Uinr = 0;
 
     private Vector3 startPosition;
     private Vector3 currentPosition;
@@ -29,7 +31,8 @@ public class Playerv2 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        UiObject.SetActive(true);
+        UiObject[Uinr].SetActive(true);
+        Uinr++;
         var path = GetComponent<Path>();
         path.enabled = false;
     }

@@ -9,16 +9,32 @@ public class KompostKnapp : MonoBehaviour
     public Color rättFärg;
     public Color felFärg;
     public int skräpTyp;
-    public int klar = 0;
+    public bool klar = false;
 
+    public GameObject player1;
+    public GameObject player2;
+    public GameObject player3;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Button knapp = kompostKnapp.GetComponent<Button>();
-        knapp.onClick.AddListener(Klickadknapp);
-        skräpTyp = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().skräpTyp;
+        if(player1.active == true)
+        {
+            skräpTyp = 1;
+        }
+        else if (player2.active == true)
+        {
+            skräpTyp = 2;
+        }
+        else if (player3.active == true)
+        {
+            skräpTyp = 3;
+        }
+
+        //Button knapp = kompostKnapp.GetComponent<Button>();
+        //knapp.onClick.AddListener(Klickadknapp);
+        //skräpTyp = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().skräpTyp;
     }
 
     // Update is called once per frame
@@ -38,7 +54,7 @@ public class KompostKnapp : MonoBehaviour
             cb1.disabledColor = rättFärg;
 
             kompostKnapp.colors = cb1;
-            klar = 1;
+            klar = true;
         }
         else
         {
