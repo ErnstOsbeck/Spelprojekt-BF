@@ -6960,7 +6960,7 @@ GameObject:
   - component: {fileID: 460397002}
   - component: {fileID: 460397001}
   m_Layer: 5
-  m_Name: Button
+  m_Name: "Button - Forts\xE4tt"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7982,7 +7982,7 @@ GameObject:
   - component: {fileID: 772999459}
   - component: {fileID: 772999458}
   m_Layer: 5
-  m_Name: Button
+  m_Name: "Button - Forts\xE4tt"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8859,7 +8859,7 @@ GameObject:
   - component: {fileID: 990750318}
   - component: {fileID: 990750317}
   m_Layer: 5
-  m_Name: Button
+  m_Name: "Button - Forts\xE4tt"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
